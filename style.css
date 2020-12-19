@@ -1,0 +1,39 @@
+
+.title{
+    text-align: center;
+}
+.text-resume{
+    width: 50%;
+
+}
+/* .imagem-exposicao img{
+    width: 70%;
+} */
+.expo{
+    display: flex;
+}
+
+.calculdora{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+#altura, #peso{
+    margin: 10px;
+}
+
+
+@media (max-width: 360px){
+    .expo{
+        /* display: flex; */
+        flex-direction: column;
+    }
+    .text-resume{
+        width: 100%;        
+    }
+    #altura, #peso{
+        padding: 15px;
+    }
+}

@@ -1,14 +1,28 @@
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+}
+#header .pesquisar img{
+    width: 100%;
+    max-width: 25px;
+}
+#header .pesquisar input{
+    width: 10vw;
+    border-bottom: 2px solid blueviolet;
+}
+
+
+
+
+/* CONTENT */
 
 .title{
     text-align: center;
 }
 .text-resume{
     width: 50%;
-
 }
-/* .imagem-exposicao img{
-    width: 70%;
-} */
+
 .expo{
     display: flex;
 }

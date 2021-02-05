@@ -20,24 +20,41 @@
     text-align: center;
 }
 .text-resume{
-    width: 50%;
+    width: 100%;
 }
 
-.expo{
+.teste-img{
     display: flex;
 }
+
+.image-background {
+    width: 100%;
+    max-width: 50vw;
+}
+.tabela{
+    text-align: center;
+}
+.tabela tr td{
+    width: 100%;
+
+    width: 20vw;
+}
+
 
 .calculdora{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
-
+    /* float: left; */
 }
 
 #altura, #peso{
     margin: 10px;
 }
 
+.calcular input{
+    width:8vw;
+}
 
 @media (max-width: 360px){
     .expo{

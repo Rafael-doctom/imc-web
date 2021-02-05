@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
@@ -7,18 +8,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>IMC | Calcúlo de Massa Corporal</title>
 </head>
+
 <body>
     <!-- HEADER -->
     <header id="header">
         <div class="container">
             <div class="row nav-menu mt-3">
-                <div class="">MENU</div>
+                <div class="">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary " type="button" id="dropdownMenu2" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Menu
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">Saúde</button>
+                            <button class="dropdown-item" type="button">Dieta</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
                 <div class=""> LOGO</div>
-                <div  class="pesquisar"> 
+                <div class="pesquisar">
                     <form class="">
                         <input class="btn  " type="search" name="" id="" placeholder="Pesquisar...">
-                       <!-- <img src="pesquisar.png" alt=""> -->
-                      </form>
+                        <!-- <img src="pesquisar.png" alt=""> -->
+                    </form>
 
 
 
@@ -27,10 +44,10 @@
         </div>
 
 
-        
+
 
     </header>
-<!-- FECHAR HEADER -->
+    <!-- FECHAR HEADER -->
 
 
 
@@ -39,83 +56,98 @@
 
 
 
+    <div class="ml-5 mr-5 mt-4">
 
-    <div class="title">
-        <h4>Cálculo IMC</h4>
-    </div>
-
-    <div class="expo">
-        <div class="text-resume">
-            <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.
-            </p>
-            <p>
-                O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.
-            </p>
-            <p>
-                Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.
-            </p>
+        <div class="title ">
+            <h4>Cálculo IMC</h4>
         </div>
-        <div class="imagem-exposicao">
-            <table border="1">
-                <tr>
-                    <th>IMC</th>
-                    <th>Resultado</th>
-                </tr>
-                <tr>
-                    <td>Menos do que 18,5</td>
-                    <td>Abaixo do peso</td>
-                </tr>
-                <tr>
-                    <td>Entre 18,5 e 24,9</td>
-                    <td>Peso normal</td>
-                </tr>
-                <tr>
-                    <td>Entre 25 e 29,9	</td>
-                    <td>Sobrepeso</td>
-                </tr>
-                <tr>
-                    <td>Entre 30 e 34,9	</td>
-                    <td>Obesidade grau 1
-                    </td>
-                </tr>
-                <tr>
-                    <td>Entre 35 e 39,9	</td>
-                    <td>Obesidade grau 2
-                    </td>
-                </tr>
-                <tr>
-                    <td>Mais do que 40		</td>
-                    <td>Obesidade grau 3
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
     
-
-    <div class="calculdora">
-        <div id="">
-            Altura (ex.: 1,70)
-            <input type="number" id="altura" placeholder="metros">
+        <div class="expo">
+            <div class="text-resume">
+                <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para
+                    calcular o peso ideal de cada pessoa.
+                </p>
+                <p>
+                    O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao
+                    quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.
+                </p>
+                <p>
+                    Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da
+                    tabela. Importante: siga os exemplos e use pontos como separadores.
+                </p>
+            </div>
+            <div class="imagem-exposicao">
+                <table border="1">
+                    <tr>
+                        <th>IMC</th>
+                        <th>Resultado</th>
+                    </tr>
+                    <tr>
+                        <td>Menos do que 18,5</td>
+                        <td>Abaixo do peso</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 18,5 e 24,9</td>
+                        <td>Peso normal</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 25 e 29,9 </td>
+                        <td>Sobrepeso</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 30 e 34,9 </td>
+                        <td>Obesidade grau 1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Entre 35 e 39,9 </td>
+                        <td>Obesidade grau 2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mais do que 40 </td>
+                        <td>Obesidade grau 3
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <div id="">
-            Peso (ex.: 69,2)  
-            <input type="number" id="peso" placeholder="kg">
-        </div>
-        <div class="calcular">
-            <input type="button" value="Calcular" onclick="funcao_calcular()">
-        </div>
-    </div>
-    <br>
-
-    <div id="resultado">
-        <h4> RESULTADO:</h4>
-    </div>
     
+    
+        <div class="calculdora">
+            <div id="">
+                Altura (ex.: 1,70)
+                <input type="number" id="altura" placeholder="metros">
+            </div>
+            <div id="">
+                Peso (ex.: 69,2)
+                <input type="number" id="peso" placeholder="kg">
+            </div>
+            <div class="calcular">
+                <input type="button" value="Calcular" onclick="funcao_calcular()">
+            </div>
+        </div>
+        <br>
+    
+        <div id="resultado">
+            <h4> RESULTADO:</h4>
+        </div>
+    </div>
 
 
 
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -26,6 +26,15 @@
 .teste-img{
     display: flex;
 }
+.logo img{
+    width: 100%;
+    max-width: 10%;
+}
+.introducao-dados h4{
+    font-weight: bold;
+    color: rgba(0, 0, 255, 0.863);
+}
+
 
 .image-background {
     width: 100%;

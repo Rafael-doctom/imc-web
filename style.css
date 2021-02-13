@@ -22,7 +22,10 @@
 .text-resume{
     width: 100%;
 }
-
+.text-resume p{
+    font-size: 1.2rem;
+    font-weight: 700;    
+}
 .teste-img{
     display: flex;
 }
@@ -40,17 +43,19 @@
     width: 100%;
     max-width: 50vw;
 }
+/* TABELA */
 .tabela{
     text-align: center;
+    /* background: blue; */
 }
 .tabela tr td{
     width: 100%;
-
     width: 20vw;
+    border-bottom: 2px solid rgb(138, 241, 233);
 }
-
-
+/* CALCULADORA */
 .calculdora{
+
     display: flex;
     /* flex-wrap: wrap; */
     align-items: center;

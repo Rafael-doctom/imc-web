@@ -19,23 +19,43 @@
 .title{
     text-align: center;
 }
-.text-resume{
-    width: 100%;
-}
-.text-resume p{
-    font-size: 1.2rem;
-    font-weight: 700;    
-}
-.teste-img{
+
+.introducao-dados{
     display: flex;
-}
-.logo img{
-    width: 100%;
-    max-width: 10%;
 }
 .introducao-dados h4{
     font-weight: bold;
     color: rgba(0, 0, 255, 0.863);
+}
+.text-resume{
+    width: 100%;
+    max-width:40vw;
+}
+.text-resume p{
+    font-size: 1.2rem;
+    font-weight: 700;   
+    margin: 0; 
+}
+.comecar-imc{
+    text-align: center;
+    font-size: 1.44rem;
+}
+.comecar-imc a{
+    background: #0069D9;
+    padding: 1rem;
+    border-radius: 15px;
+    text-decoration: none;
+    color:white;
+}
+.comecar-imc a:hover{
+    background: #4992e0;
+}
+/* .teste-img{
+    display: flex;
+} */
+.logo img{
+    width: 100%;
+    max-width: 10%;
 }
 
 

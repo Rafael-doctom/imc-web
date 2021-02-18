@@ -19,7 +19,10 @@
 .title{
     text-align: center;
 }
-
+/* .introducao{
+    display: flex;
+    flex-direction: column;
+} */
 .introducao-dados{
     display: flex;
 }
@@ -34,7 +37,7 @@
 .text-resume p{
     font-size: 1.2rem;
     font-weight: 700;   
-    margin: 0; 
+    margin:0;
 }
 .comecar-imc{
     text-align: center;
@@ -64,22 +67,32 @@
     max-width: 50vw;
 }
 /* TABELA */
-.tabela{
-    text-align: center;
-    /* background: blue; */
+.tabela {
+    text-align: left;
+    margin-top: -220px;
 }
 .tabela tr td{
     width: 100%;
     width: 20vw;
     border-bottom: 2px solid rgb(138, 241, 233);
 }
+.comecar{
+    margin-top:1rem;
+    margin-left: 10rem;
+}
+.comecar a{
+    color:white;
+    font-size: 1.75rem;
+    padding: 1rem;
+    background: rgba(63, 143, 197, 0.884);
+    border: 0;
+    border-radius: 10px;
+    text-decoration: none;
+}
 /* CALCULADORA */
 .calculdora{
-
     display: flex;
-    /* flex-wrap: wrap; */
     align-items: center;
-    /* float: left; */
 }
 
 #altura, #peso{
@@ -89,6 +102,11 @@
 .calcular input{
     width:8vw;
 }
+
+
+
+
+
 
 @media (max-width: 360px){
     .expo{

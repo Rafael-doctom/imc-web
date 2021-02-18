@@ -69,17 +69,14 @@
 /* TABELA */
 .tabela {
     text-align: left;
-    margin-top: -220px;
+    margin-top: -320px;
 }
 .tabela tr td{
     width: 100%;
     width: 20vw;
     border-bottom: 2px solid rgb(138, 241, 233);
 }
-.comecar{
-    margin-top:1rem;
-    margin-left: 10rem;
-}
+
 .comecar a{
     color:white;
     font-size: 1.75rem;
@@ -93,14 +90,16 @@
 .calculdora{
     display: flex;
     align-items: center;
+    margin-top:10px;
 }
 
-#altura, #peso{
-    margin: 10px;
+ #peso{
+    margin-left: 10px;
 }
 
 .calcular input{
     width:8vw;
+    margin-left: 10px;
 }
 
 

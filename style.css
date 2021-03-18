@@ -90,6 +90,8 @@
 .calculdora{
     display: flex;
     align-items: center;
+    flex-direction: column;
+    margin-right: 150px;
     margin-top:10px;
 }
 
@@ -104,18 +106,66 @@
 
 
 
+@media (max-width: 768px){
+   
+    .container{
+        /* padding: 1rem; */
+    }
+    .image-background{
+        /* display: none; */
+    }
+    /* TABELA */
+    .tabela {
+        text-align: left;
+        margin-top: 0px;
+    }
+
+
+}
 
 
 
-@media (max-width: 360px){
+@media (max-width: 425px){
+    .logo img{
+        width: 100%;
+        max-width: 30%;
+    }
+    
+    #header .pesquisar input{
+        width: 30vw;
+        border-bottom: 2px solid blueviolet;
+    }
+    .image-background{
+        display: none;
+    }
+    .text-resume p{
+        font-size: 1.2rem;
+        font-weight: 700;   
+        margin:0;
+        width: 25rem;
+    }
     .expo{
-        /* display: flex; */
         flex-direction: column;
     }
-    .text-resume{
-        width: 100%;        
+    .tabela tr td{
+        width: 100%;
+        width: 50vw;
+        border-bottom: 2px solid rgb(138, 241, 233);
     }
-    #altura, #peso{
-        padding: 15px;
+    /* CALCULADORA */
+    .calculdora{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 150px;
+        margin-top:10px;
     }
+    .calcular input{
+        width:20vw;
+        margin-left: 10px;
+    }
+    
+
+
+
 }

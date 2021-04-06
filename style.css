@@ -2,10 +2,7 @@
     display: flex;
     justify-content: space-between;
 }
-#header .pesquisar img{
-    width: 100%;
-    max-width: 25px;
-}
+
 #header .pesquisar input{
     width: 10vw;
     border-bottom: 2px solid blueviolet;
@@ -90,7 +87,7 @@
 .calculdora{
     display: flex;
     align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
     margin-right: 150px;
     margin-top:10px;
 }
@@ -107,20 +104,28 @@
 
 
 @media (max-width: 768px){
-   
-    .container{
-        /* padding: 1rem; */
-    }
-    .image-background{
-        /* display: none; */
-    }
+
     /* TABELA */
     .tabela {
         text-align: left;
         margin-top: 0px;
     }
 
-
+    .text-resume{
+        width: 100%;
+        max-width:30vw;
+    }
+    .text-resume p{
+        font-size: 1.2rem;
+        font-weight: 700;   
+        margin:0;
+    }
+    
+    .calcular input{
+        width:20vw;
+        margin-left: 10px;
+    }
+  
 }
 
 
@@ -132,20 +137,26 @@
     }
     
     #header .pesquisar input{
-        width: 30vw;
+        width: 10vw;
         border-bottom: 2px solid blueviolet;
     }
     .image-background{
         display: none;
     }
+    .text-resume{
+        /* margin-left: -30px; */
+    }
     .text-resume p{
         font-size: 1.2rem;
         font-weight: 700;   
-        margin:0;
+        margin-left:-35px;
         width: 25rem;
     }
     .expo{
         flex-direction: column;
+    }
+    .tabela{
+        margin-left:-25px;
     }
     .tabela tr td{
         width: 100%;
@@ -160,9 +171,13 @@
         margin-right: 150px;
         margin-top:10px;
     }
+    #peso{
+        margin-left: 0px;
+    }
     .calcular input{
-        width:20vw;
+        width:50vw;
         margin-left: 10px;
+        margin-bottom: 15px;
     }
     
 

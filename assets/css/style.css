@@ -1,19 +1,14 @@
-body{
-    padding: 15px;
-}
-
 .nav-menu{
     display: flex;
     justify-content: space-between;
+    background-color: rgb(172, 164, 164);
 }
 
 #header .pesquisar input{
     width: 10vw;
     border-bottom: 2px solid blueviolet;
+    display: block;
 }
-
-
-
 
 /* CONTENT */
 
@@ -54,9 +49,7 @@ body{
 .comecar-imc a:hover{
     background: #4992e0;
 }
-/* .teste-img{
-    display: flex;
-} */
+
 .logo img{
     width: 100%;
     max-width: 10%;
@@ -64,13 +57,16 @@ body{
 
 
 .image-background {
-    width: 100%;
-    max-width: 50vw;
+    width: 10vw;
+    margin-left: 5rem;
 }
+
 /* TABELA */
 .tabela {
     text-align: left;
-    margin-top: -320px;
+    width: 20vw;
+    height: 25vh;
+    margin-top: -35rem;
 }
 .tabela tr td{
     width: 100%;
@@ -100,16 +96,18 @@ body{
     margin-left: 10px;
 }
 
-.calcular input{
+.calcular button{
     width:8vw;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
+#resultado{
+    margin-top: 1rem;
+}
 
-
+/* 
 @media (max-width: 768px){
 
-    /* TABELA */
     .tabela {
         text-align: left;
         margin-top: 0px;
@@ -147,9 +145,7 @@ body{
     .image-background{
         display: none;
     }
-    .text-resume{
-        /* margin-left: -30px; */
-    }
+   
     .text-resume p{
         font-size: 1.2rem;
         font-weight: 700;   
@@ -167,7 +163,6 @@ body{
         width: 50vw;
         border-bottom: 2px solid rgb(138, 241, 233);
     }
-    /* CALCULADORA */
     .calculdora{
         display: flex;
         align-items: center;
@@ -187,4 +182,4 @@ body{
 
 
 
-}
+} */

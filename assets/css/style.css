@@ -1,10 +1,10 @@
-.nav-menu{
+.nav-menu {
     display: flex;
     justify-content: space-between;
     background-color: rgb(172, 164, 164);
 }
 
-#header .pesquisar input{
+#header .pesquisar input {
     width: 10vw;
     border-bottom: 2px solid blueviolet;
     display: block;
@@ -12,45 +12,52 @@
 
 /* CONTENT */
 
-.title{
+.title {
     text-align: center;
 }
+
 /* .introducao{
     display: flex;
     flex-direction: column;
 } */
-.introducao-dados{
+.introducao-dados {
     display: flex;
 }
-.introducao-dados h4{
+
+.introducao-dados h4 {
     font-weight: bold;
     color: rgba(0, 0, 255, 0.863);
 }
-.text-resume{
-    width: 100%;
-    max-width:40vw;
+
+.text-resume {
+    width: 40vw;
+    max-width: 40vw;
 }
-.text-resume p{
+
+.text-resume p {
     font-size: 1.2rem;
-    font-weight: 700;   
-    margin:0;
+    font-weight: 700;
+    margin: 0;
 }
-.comecar-imc{
+
+.comecar-imc {
     text-align: center;
     font-size: 1.44rem;
 }
-.comecar-imc a{
+
+.comecar-imc a {
     background: #0069D9;
     padding: 1rem;
     border-radius: 15px;
     text-decoration: none;
-    color:white;
+    color: white;
 }
-.comecar-imc a:hover{
+
+.comecar-imc a:hover {
     background: #4992e0;
 }
 
-.logo img{
+.logo img {
     width: 100%;
     max-width: 10%;
 }
@@ -68,14 +75,15 @@
     height: 25vh;
     margin-top: -35rem;
 }
-.tabela tr td{
+
+.tabela tr td {
     width: 100%;
     width: 20vw;
     border-bottom: 2px solid rgb(138, 241, 233);
 }
 
-.comecar a{
-    color:white;
+.comecar a {
+    color: white;
     font-size: 1.75rem;
     padding: 1rem;
     background: rgba(63, 143, 197, 0.884);
@@ -83,103 +91,141 @@
     border-radius: 10px;
     text-decoration: none;
 }
+
 /* CALCULADORA */
-.calculdora{
+.calculdora {
     display: flex;
     align-items: center;
     /* flex-direction: column; */
     margin-right: 150px;
-    margin-top:10px;
+    margin-top: 10px;
 }
 
- #peso{
+#peso {
     margin-left: 10px;
 }
 
-.calcular button{
-    width:8vw;
+.calcular button {
+    width: 8vw;
     margin-left: 20px;
 }
 
-#resultado{
+#resultado {
     margin-top: 1rem;
 }
 
-/* 
-@media (max-width: 768px){
+@media (max-width: 768px) {
+    .image-background {
+        width: 10vw;
+        margin-left: 5rem;
+        display: none;
+    }
+
+    .introducao-dados {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .text-resume {
+        width: 100vw;
+        max-width: 100vw;
+    }
+
+    .text-resume p {
+        font-size: 1rem;
+        font-weight: 700;
+        margin: 0;
+    }
 
     .tabela {
         text-align: left;
-        margin-top: 0px;
-    }
+        min-width: 45vw;
+        height: 36vh;
 
-    .text-resume{
-        width: 100%;
-        max-width:30vw;
-    }
-    .text-resume p{
-        font-size: 1.2rem;
-        font-weight: 700;   
-        margin:0;
     }
     
-    .calcular input{
-        width:20vw;
-        margin-left: 10px;
+    .tabela td {
+        text-align: left;
+        width: 30vw;
+        min-width: 30vw;
     }
-  
+
+    .comecar{
+        margin-top: 45rem;
+    }
+
+    .comecar a {
+        color: white;
+        font-size: 1.75rem;
+        padding: 1rem;
+        background: rgba(63, 143, 197, 0.884);
+        border: 0;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+
+    .calcular button {
+        width: 14vw;
+        margin-left: 20px;
+    }
+
 }
-
-
 
 @media (max-width: 425px){
     .logo img{
         width: 100%;
-        max-width: 30%;
+        max-width: 25%;
     }
     
     #header .pesquisar input{
-        width: 10vw;
+        width: 30vw;
         border-bottom: 2px solid blueviolet;
+        margin-left: -4rem;
     }
-    .image-background{
-        display: none;
+
+
+    .text-resume p {
+        font-size: 0.86rem;
+        font-weight: 700;
+        margin: 0;
     }
-   
-    .text-resume p{
-        font-size: 1.2rem;
-        font-weight: 700;   
-        margin-left:-35px;
-        width: 25rem;
+
+    .tabela {
+        text-align: left;
+        min-width: 95vw;
+        height: 36vh;
     }
-    .expo{
-        flex-direction: column;
+
+    .tabela td {
+        text-align: left;
+        width: 45vw;
+        min-width: 45vw;
     }
-    .tabela{
-        margin-left:-25px;
-    }
-    .tabela tr td{
-        width: 100%;
-        width: 50vw;
-        border-bottom: 2px solid rgb(138, 241, 233);
-    }
-    .calculdora{
+
+    .calculdora {
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-right: 150px;
-        margin-top:10px;
+        /* flex-wrap: wrap; */
+        margin: 0 auto;
+        margin-right: 35px;
+        margin-top: 0px;
+        width:92vw;
     }
-    #peso{
+
+    .calculdora input{
+        width:92vw;
         margin-left: 0px;
-    }
-    .calcular input{
-        width:50vw;
-        margin-left: 10px;
         margin-bottom: 15px;
     }
-    
 
+    #peso {
+        margin-left: 0px;
+    }
 
-
-} */
+    .calcular button {
+        width: 90vw;
+        margin-left: 0;
+    }
+} 

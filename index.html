@@ -12,19 +12,19 @@
 
 <body>
 
-    <div class="container">
+    <div class="mt-1 container">
         <div class="introducao row">
             <div class="introducao-dados col-12 d-flex align-items-center">
                 <div class="text-resume col-lg-7 col-sm-12 ">
                     <div class="title">
                         <h4>Cálculo IMC</h4>
                     </div>
-                    <p class="mt-3">IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela
+                    <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela
                         Organização Mundial de Saúde
                         para
                         calcular o peso ideal de cada pessoa.
                     </p>
-                    <p class="mt-3">
+                    <p>
                         O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada
                         ao
                         quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e
@@ -35,7 +35,7 @@
                     <img src="assets/images/img-background.svg" alt="">
                 </div>
             </div>
-            <div class="tabela col-12 mt-1 mb-1">
+            <div class="tabela col-12  ">
                 <table class="col-lg-5">
                     <tr>
                         <th>IMC</th>
@@ -67,22 +67,22 @@
                     </tr>
                 </table>
             </div>
-            <div class="comecar  mt-1 ">
+            <div class="comecar">
                 <div class="calculdora ">
                     <div class="mb-2">
-                        <input type="text" id="altura" class="form-control" placeholder="Altura (ex.: 1,70)"
+                        <input type="text" id="height" class="form-control" placeholder="Altura (ex.: 1,70)"
                             aria-label="">
                     </div>
                     <div class="mb-2">
-                        <input type="text" id="peso" class="form-control" placeholder="Peso (ex.: 69,2)" aria-label="">
+                        <input type="text" id="weight" class="form-control" placeholder="Peso (ex.: 69,2)"
+                            aria-label="">
                     </div>
-                    <div class="calcular ">
-                        <button type="button" class="btn btn-warning" onclick="funcao_calcular()">Calcular</button>
+                    <div class="calcular col-12 d-flex align-items-center">
+                        <button type="button" class="btn btn-warning " id="calculator">Calcular</button>
+                        <h4 id="result" class="mt-1"></h4>
                     </div>
                 </div>
-                <div id="resultado">
-                    <h4></h4>
-                </div>
+
             </div>
         </div>
     </div>

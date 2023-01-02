@@ -1,5 +1,17 @@
+@media (min-width:768px) {
+    #result {
+        margin-left: 1rem;
+        font-size: 100%;
+    }
+}
+
 @media (max-width:768px) {
     .image-background {
         display: none;
+    }
+
+    #result {
+        font-size: 100%;
+        margin-left: 1rem;
     }
 }
